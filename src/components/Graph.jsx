@@ -904,10 +904,22 @@ class GraphContainer extends Component {
                 edge.enforced = data.properties.enforced;
             }
 
-            if (data.properties.hasOwnProperty('port')) {
-                let port = data.properties.port;
-                edge.label = `${type} (${port})`;
+            if (
+                data.properties.hasOwnProperty('linkname') &&
+                data.properties.hasOwnProperty('account')
+            ) {
+                let linkname = data.properties.linkname;
+                let account = data.properties.account;
+
+                edge.label = `${type} (${linkname}) - ${account}`;
+
+                return edge;
             }
+
+//        if (data.properties.hasOwnProperty('port')) {
+//                let port = data.properties.port;
+//                edge.label = `${type} (${port})`;
+//            }
         }
 
         if (

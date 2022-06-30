@@ -384,6 +384,18 @@
                     "endNode": "{}"
                 }
             ]
+        },
+        {
+            "name": "Find all SQL Links",
+            "category": "SQL Integration",
+            "queryList": [
+                {
+                    "final": true,
+                    "query": "match p=(M:Computer)-[r:SQLLink]->(n:Computer) return p",
+                    "allowCollapse": true,
+                    "endNode": "{}"
+                }
+            ]
         }
     ]
 }

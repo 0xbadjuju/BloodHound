@@ -103,6 +103,7 @@ const EdgeFilter = ({ open }) => {
                     <EdgeFilterCheck name='AddAllowedToAct' />
                     <EdgeFilterCheck name='AllowedToAct' />
                     <EdgeFilterCheck name='SQLAdmin' />
+                    <EdgeFilterCheck name='SQLLink' />
                     <EdgeFilterCheck name='HasSIDHistory' />
                 </div>
                 <div>

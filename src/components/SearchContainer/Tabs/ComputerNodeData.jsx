@@ -235,6 +235,15 @@ const ComputerNodeData = () => {
                                     start={label}
                                     distinct
                                 />
+                                <NodeCypherLink
+                                    property='SQL Links'
+                                    target={objectid}
+                                    baseQuery={
+                                        'MATCH p=(n:Computer)-[r:SQLLink]->(m:Computer {objectid: $objectid})'
+                                    }
+                                    start={label}
+                                    distinct
+                                />
                             </tbody>
                         </Table>
                     </div>

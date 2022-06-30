@@ -36,6 +36,7 @@ const fullEdgeList = [
     'AddAllowedToAct',
     'AllowedToAct',
     'SQLAdmin',
+    'SQLLink',
     'HasSIDHistory',
     'AZAddMembers',
     'AZContains',
